@@ -3,14 +3,14 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as d3 from 'd3'
 import { toJS } from 'immutable'
-import { makeGetXStitch, makeGetSpaceColor } from '../selectors/space_selectors.js'
-import { toggleStitch } from '../actions/space_actions.js'
+import { makeGetXStitch, makeGetSpaceColor, makeGetSpaceSelected } from '../selectors/space_selectors.js'
+import { spaceClickAction } from '../actions/space_actions.js'
 
 class Space extends React.Component {
   constructor() {
     super()
 
-    this.toggleStitch = this.toggleStitch.bind(this)
+    this.spaceClickAction = this.spaceClickAction.bind(this)
   }
 
   shouldComponentUpdate() {
@@ -45,14 +45,14 @@ class Space extends React.Component {
         .attr('key', 'stitch-b')
   }
 
-  toggleStitch() {
+  spaceClickAction() {
     const { rowIdx, colIdx } = this.props
-    this.props.toggleStitch(rowIdx, colIdx)
+    this.props.spaceClickAction(rowIdx, colIdx)
   }
 
   render() {
     return (
-      <g ref={(g) => this.gElem = g} onClick={this.toggleStitch} >
+      <g ref={(g) => this.gElem = g} onClick={this.spaceClickAction} >
       </g>
       )
   }
@@ -60,7 +60,7 @@ class Space extends React.Component {
 
 function SpaceWrapper(props) {
   return (
-    <g className={`space dmc-${props.color} ` + (props.stitch ? 'stitch--x' : 'stitch--blank')} >
+    <g className={`space dmc-${props.color} ${props.selected ? 'selected ' : ''}` + (props.stitch ? 'stitch--x' : 'stitch--blank')} >
       <Space {...props} />
     </g>
     )
@@ -69,10 +69,12 @@ function SpaceWrapper(props) {
 const makeMapStateToProps = () => {
   const getSpaceStitch = makeGetXStitch()
   const getSpaceColor = makeGetSpaceColor()
+  const getSpaceSelected = makeGetSpaceSelected()
   const mapStateToProps = (state, props) => {
     return {
       stitch: getSpaceStitch(state, props),
-      color: getSpaceColor(state, props)
+      color: getSpaceColor(state, props),
+      selected: getSpaceSelected(state, props)
     }
   }
   return mapStateToProps
@@ -80,7 +82,7 @@ const makeMapStateToProps = () => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    toggleStitch: bindActionCreators(toggleStitch, dispatch)
+    spaceClickAction: bindActionCreators(spaceClickAction, dispatch)
   }
 }
 

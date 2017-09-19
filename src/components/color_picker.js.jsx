@@ -28,11 +28,9 @@ class ColorPicker extends React.Component {
     })
 
     return(
-      <div>
-        <div style={{width: 300, height: 500, border: '1px dashed red', display: 'inline-block'}}>
-          <div style={{height: '40px', width: '100%', backgroundColor: selectedData.hex}}></div>
-          {colorChoices}
-        </div>
+      <div style={{width: 300, height: 500, border: '1px dashed red', display: 'inline-block'}}>
+        <div style={{height: '40px', width: '100%', backgroundColor: selectedData.hex}}></div>
+        {colorChoices}
       </div>
     )
   }

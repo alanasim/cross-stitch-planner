@@ -20,7 +20,8 @@ const CANVAS_DEFAULT = {
 }
 
 const TOOLS_DEFAULT = {
-  color: '310'
+  color: '310',
+  tool: 'add'
 }
 
 const SPACES_DEFAULT = () => {
@@ -51,6 +52,8 @@ const toolsReducer = (state = fromJS(TOOLS_DEFAULT), action) => {
   switch (action.type) {
     case 'UPDATE_COLOR_TOOL':
       return state.set('color', action.payload)
+    case 'UPDATE_TOOL':
+      return state.set('tool', action.payload)
     default:
       return state
   }
@@ -60,6 +63,8 @@ const spacesReducer = (state = fromJS(SPACES_DEFAULT()), action) => {
   switch (action.type) {
     case 'TOGGLE_STITCH':
       return state.mergeIn([action.row, action.col], fromJS({xStitch: !state.getIn([action.row, action.col, 'xStitch']), color: action.color}))
+    case 'TOGGLE_SELECT':
+      return state.mergeIn([action.row, action.col], fromJS({selected: !state.getIn([action.row, action.col, 'selected'])}))
     default:
       return state
   }

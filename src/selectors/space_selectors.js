@@ -29,3 +29,11 @@ export const makeGetSpaceColor = () => {
       return spaces.getIn([rowIdx, colIdx, 'color'])
   })
 }
+
+export const makeGetSpaceSelected = () => {
+  return createSelector(
+    [getSpaces, getRowIdx, getColIdx],
+    (spaces, rowIdx, colIdx) => {
+      return spaces.getIn([rowIdx, colIdx, 'selected'])
+  })
+}

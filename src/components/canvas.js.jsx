@@ -29,7 +29,7 @@ class Canvas extends React.Component {
     }    
 
     return(
-      <div>
+      <div style={{display: 'inline-block'}}>
         <div style={{width: 700, height: 500, border: '1px dotted orange'}}>
           <svg width="600" height="400" viewbox="0 0 600 400">
             <DotGrid scale={scale} width={width} height={height} threadCount={threadCount} />

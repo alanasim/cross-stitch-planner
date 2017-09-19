@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -56,6 +56,12 @@
 
 .space:hover .stitch-line {
   stroke: purple;
+}
+
+.space.selected {
+  border: 1px solid lightGreen;
+  stroke: limeGreen;
+  stroke-width: 2;
 }
 
 
