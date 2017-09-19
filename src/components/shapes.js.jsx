@@ -34,13 +34,12 @@ export class Dot extends React.Component {
     g.append('g')
       .attr('class', 'dot ' + className)
       .selectAll("circle")
-      .data(coords)
+      .data([coords])
       .enter()
       .append("circle")
       .attr("cx", d => scale.x(d.x))
       .attr("cy", d => scale.y(d.y))
-      .attr("r", 2.5)
-      .style("fill", "blue")
+      .attr("r", 0.5)
   }
 
   render() {

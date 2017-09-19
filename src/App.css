@@ -31,3 +31,42 @@
   stroke-width: 0.5 !important;
   stroke: lightBlue;
 }
+
+.dot--strong {
+  fill: blue;
+}
+
+.dot--light {
+  fill: #0e0e0e;
+}
+
+.stitch-line {
+  stroke-width: 0.5;
+  stroke: pink;
+}
+
+.space .stitch-line {
+  stroke: transparent;
+}
+
+.space:hover .stitch-line {
+  stroke: purple;
+}
+/*
+.space {
+  display: block;
+}
+
+.space:hover {
+  border: 1px solid red;
+}
+
+.g-el {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.g-el:hover {
+  border: 1px dotted green;
+  cursor: pointer;
+}*/

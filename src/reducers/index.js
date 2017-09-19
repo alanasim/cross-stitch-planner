@@ -7,7 +7,7 @@ const INITIAL_STATE = {
   },
   width: 18,
   height: 12,
-  threadCount: 14,
+  threadCount: 7,
   units: 'in'
 }
 
