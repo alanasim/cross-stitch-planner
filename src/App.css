@@ -45,11 +45,11 @@
   stroke: transparent;
 }
 
-.space.stitch--blank .stitch-line{
+.stitch--blank .stitch-line{
   stroke: transparent;
 }
 
-.space.stitch--x .stitch-line{
+.stitch--x .stitch-line{
   stroke: black;
   stroke-width: 1.5;
 }
@@ -58,21 +58,1443 @@
   stroke: purple;
 }
 
-/*
-.space {
-  display: block;
+
+.stitch--x.dmc-000 .stitch-line{
+  stroke: #FFFFFF;
 }
 
-.space:hover {
-  border: 1px solid red;
+.stitch--x.dmc-208 .stitch-line{
+  stroke: #945B80;
 }
 
-.g-el {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+.stitch--x.dmc-209 .stitch-line{
+  stroke: #CE94BA;
 }
-.g-el:hover {
-  border: 1px dotted green;
-  cursor: pointer;
-}*/
+
+.stitch--x.dmc-210 .stitch-line{
+  stroke: #ECCFE1;
+}
+
+.stitch--x.dmc-211 .stitch-line{
+  stroke: #F3DAE4;
+}
+
+.stitch--x.dmc-221 .stitch-line{
+  stroke: #9C294A;
+}
+
+.stitch--x.dmc-223 .stitch-line{
+  stroke: #DB8073;
+}
+
+.stitch--x.dmc-224 .stitch-line{
+  stroke: #FFC7B0;
+}
+
+.stitch--x.dmc-225 .stitch-line{
+  stroke: #FFF0E4;
+}
+
+.stitch--x.dmc-300 .stitch-line{
+  stroke: #8F3926;
+}
+
+.stitch--x.dmc-301 .stitch-line{
+  stroke: #D16654;
+}
+
+.stitch--x.dmc-304 .stitch-line{
+  stroke: #BC0061;
+}
+
+.stitch--x.dmc-307 .stitch-line{
+  stroke: #FFE76D;
+}
+
+.stitch--x.dmc-309 .stitch-line{
+  stroke: #D62B5B;
+}
+
+.stitch--x.dmc-310 .stitch-line{
+  stroke: #000000;
+}
+
+.stitch--x.dmc-311 .stitch-line{
+  stroke: #004F61;
+}
+
+.stitch--x.dmc-312 .stitch-line{
+  stroke: #3A5467;
+}
+
+.stitch--x.dmc-315 .stitch-line{
+  stroke: #A35A5B;
+}
+
+.stitch--x.dmc-316 .stitch-line{
+  stroke: #DC8D8D;
+}
+
+.stitch--x.dmc-317 .stitch-line{
+  stroke: #A78B88;
+}
+
+.stitch--x.dmc-318 .stitch-line{
+  stroke: #C5C6BE;
+}
+
+.stitch--x.dmc-319 .stitch-line{
+  stroke: #555F52;
+}
+
+.stitch--x.dmc-320 .stitch-line{
+  stroke: #8A9978;
+}
+
+.stitch--x.dmc-321 .stitch-line{
+  stroke: #E71261;
+}
+
+.stitch--x.dmc-322 .stitch-line{
+  stroke: #516D87;
+}
+
+.stitch--x.dmc-326 .stitch-line{
+  stroke: #BC1641;
+}
+
+.stitch--x.dmc-327 .stitch-line{
+  stroke: #3D0067;
+}
+
+.stitch--x.dmc-333 .stitch-line{
+  stroke: #7F5482;
+}
+
+.stitch--x.dmc-334 .stitch-line{
+  stroke: #738CAA;
+}
+
+.stitch--x.dmc-335 .stitch-line{
+  stroke: #DB244F;
+}
+
+.stitch--x.dmc-336 .stitch-line{
+  stroke: #244967;
+}
+
+.stitch--x.dmc-340 .stitch-line{
+  stroke: #A279A4;
+}
+
+.stitch--x.dmc-341 .stitch-line{
+  stroke: #91B4C5;
+}
+
+.stitch--x.dmc-347 .stitch-line{
+  stroke: #C22443;
+}
+
+.stitch--x.dmc-349 .stitch-line{
+  stroke: #DC3D5B;
+}
+
+.stitch--x.dmc-350 .stitch-line{
+  stroke: #ED455A;
+}
+
+.stitch--x.dmc-351 .stitch-line{
+  stroke: #FF8087;
+}
+
+.stitch--x.dmc-352 .stitch-line{
+  stroke: #FF9D90;
+}
+
+.stitch--x.dmc-353 .stitch-line{
+  stroke: #FFC4B8;
+}
+
+.stitch--x.dmc-355 .stitch-line{
+  stroke: #BD492F;
+}
+
+.stitch--x.dmc-356 .stitch-line{
+  stroke: #E2725B;
+}
+
+.stitch--x.dmc-367 .stitch-line{
+  stroke: #5F705B;
+}
+
+.stitch--x.dmc-368 .stitch-line{
+  stroke: #B5CEA2;
+}
+
+.stitch--x.dmc-369 .stitch-line{
+  stroke: #F3FAD1;
+}
+
+.stitch--x.dmc-370 .stitch-line{
+  stroke: #B88A57;
+}
+
+.stitch--x.dmc-371 .stitch-line{
+  stroke: #C49B64;
+}
+
+.stitch--x.dmc-372 .stitch-line{
+  stroke: #CBA26B;
+}
+
+.stitch--x.dmc-400 .stitch-line{
+  stroke: #9D3C27;
+}
+
+.stitch--x.dmc-402 .stitch-line{
+  stroke: #FFBEA4;
+}
+
+.stitch--x.dmc-407 .stitch-line{
+  stroke: #C2654C;
+}
+
+.stitch--x.dmc-413 .stitch-line{
+  stroke: #6D5F5F;
+}
+
+.stitch--x.dmc-414 .stitch-line{
+  stroke: #A78B88;
+}
+
+.stitch--x.dmc-415 .stitch-line{
+  stroke: #DDDDDA;
+}
+
+.stitch--x.dmc-420 .stitch-line{
+  stroke: #8C5B2B;
+}
+
+.stitch--x.dmc-422 .stitch-line{
+  stroke: #EDAC7B;
+}
+
+.stitch--x.dmc-433 .stitch-line{
+  stroke: #975414;
+}
+
+.stitch--x.dmc-434 .stitch-line{
+  stroke: #B26746;
+}
+
+.stitch--x.dmc-435 .stitch-line{
+  stroke: #BB6B39;
+}
+
+.stitch--x.dmc-436 .stitch-line{
+  stroke: #E79873;
+}
+
+.stitch--x.dmc-437 .stitch-line{
+  stroke: #EEAB79;
+}
+
+.stitch--x.dmc-444 .stitch-line{
+  stroke: #FFB000;
+}
+
+.stitch--x.dmc-445 .stitch-line{
+  stroke: #FFFFBE;
+}
+
+.stitch--x.dmc-451 .stitch-line{
+  stroke: #B3978F;
+}
+
+.stitch--x.dmc-452 .stitch-line{
+  stroke: #D2B9AF;
+}
+
+.stitch--x.dmc-453 .stitch-line{
+  stroke: #EBCFB9;
+}
+
+.stitch--x.dmc-469 .stitch-line{
+  stroke: #74725C;
+}
+
+.stitch--x.dmc-470 .stitch-line{
+  stroke: #858F6C;
+}
+
+.stitch--x.dmc-471 .stitch-line{
+  stroke: #B0BB8C;
+}
+
+.stitch--x.dmc-472 .stitch-line{
+  stroke: #EEFFB6;
+}
+
+.stitch--x.dmc-498 .stitch-line{
+  stroke: #BB0061;
+}
+
+.stitch--x.dmc-500 .stitch-line{
+  stroke: #2B3929;
+}
+
+.stitch--x.dmc-501 .stitch-line{
+  stroke: #435549;
+}
+
+.stitch--x.dmc-502 .stitch-line{
+  stroke: #869E86;
+}
+
+.stitch--x.dmc-503 .stitch-line{
+  stroke: #C3CEB7;
+}
+
+.stitch--x.dmc-504 .stitch-line{
+  stroke: #CEDDC1;
+}
+
+.stitch--x.dmc-517 .stitch-line{
+  stroke: #107F87;
+}
+
+.stitch--x.dmc-518 .stitch-line{
+  stroke: #66949A;
+}
+
+.stitch--x.dmc-519 .stitch-line{
+  stroke: #C2D1CF;
+}
+
+.stitch--x.dmc-520 .stitch-line{
+  stroke: #374912;
+}
+
+.stitch--x.dmc-522 .stitch-line{
+  stroke: #9FA98E;
+}
+
+.stitch--x.dmc-523 .stitch-line{
+  stroke: #ACB78E;
+}
+
+.stitch--x.dmc-524 .stitch-line{
+  stroke: #CDB69E;
+}
+
+.stitch--x.dmc-535 .stitch-line{
+  stroke: #555559;
+}
+
+.stitch--x.dmc-543 .stitch-line{
+  stroke: #EFD6BC;
+}
+
+.stitch--x.dmc-550 .stitch-line{
+  stroke: #6D1261;
+}
+
+.stitch--x.dmc-552 .stitch-line{
+  stroke: #925582;
+}
+
+.stitch--x.dmc-553 .stitch-line{
+  stroke: #A06492;
+}
+
+.stitch--x.dmc-554 .stitch-line{
+  stroke: #F3CEE1;
+}
+
+.stitch--x.dmc-561 .stitch-line{
+  stroke: #3B604C;
+}
+
+.stitch--x.dmc-562 .stitch-line{
+  stroke: #618661;
+}
+
+.stitch--x.dmc-563 .stitch-line{
+  stroke: #B6D4B4;
+}
+
+.stitch--x.dmc-564 .stitch-line{
+  stroke: #D6E6CC;
+}
+
+.stitch--x.dmc-580 .stitch-line{
+  stroke: #006700;
+}
+
+.stitch--x.dmc-581 .stitch-line{
+  stroke: #979831;
+}
+
+.stitch--x.dmc-597 .stitch-line{
+  stroke: #809784;
+}
+
+.stitch--x.dmc-598 .stitch-line{
+  stroke: #D0DFCD;
+}
+
+.stitch--x.dmc-600 .stitch-line{
+  stroke: #D0396A;
+}
+
+.stitch--x.dmc-601 .stitch-line{
+  stroke: #DE3969;
+}
+
+.stitch--x.dmc-602 .stitch-line{
+  stroke: #E7547A;
+}
+
+.stitch--x.dmc-603 .stitch-line{
+  stroke: #FF738C;
+}
+
+.stitch--x.dmc-604 .stitch-line{
+  stroke: #FFBDCA;
+}
+
+.stitch--x.dmc-605 .stitch-line{
+  stroke: #FFCFD6;
+}
+
+.stitch--x.dmc-606 .stitch-line{
+  stroke: #FF0000;
+}
+
+.stitch--x.dmc-608 .stitch-line{
+  stroke: #FF5B00;
+}
+
+.stitch--x.dmc-610 .stitch-line{
+  stroke: #976854;
+}
+
+.stitch--x.dmc-611 .stitch-line{
+  stroke: #9E6D5B;
+}
+
+.stitch--x.dmc-612 .stitch-line{
+  stroke: #CB9867;
+}
+
+.stitch--x.dmc-613 .stitch-line{
+  stroke: #DBB07A;
+}
+
+.stitch--x.dmc-632 .stitch-line{
+  stroke: #A24D34;
+}
+
+.stitch--x.dmc-640 .stitch-line{
+  stroke: #A3A39D;
+}
+
+.stitch--x.dmc-642 .stitch-line{
+  stroke: #AEB0AA;
+}
+
+.stitch--x.dmc-644 .stitch-line{
+  stroke: #E0E0D7;
+}
+
+.stitch--x.dmc-645 .stitch-line{
+  stroke: #717171;
+}
+
+.stitch--x.dmc-646 .stitch-line{
+  stroke: #797979;
+}
+
+.stitch--x.dmc-647 .stitch-line{
+  stroke: #BEBEB9;
+}
+
+.stitch--x.dmc-648 .stitch-line{
+  stroke: #CACACA;
+}
+
+.stitch--x.dmc-666 .stitch-line{
+  stroke: #D52756;
+}
+
+.stitch--x.dmc-676 .stitch-line{
+  stroke: #FFCE9E;
+}
+
+.stitch--x.dmc-677 .stitch-line{
+  stroke: #FFE7B6;
+}
+
+.stitch--x.dmc-680 .stitch-line{
+  stroke: #D18C67;
+}
+
+.stitch--x.dmc-699 .stitch-line{
+  stroke: #005B06;
+}
+
+.stitch--x.dmc-700 .stitch-line{
+  stroke: #00602F;
+}
+
+.stitch--x.dmc-701 .stitch-line{
+  stroke: #4F6C45;
+}
+
+.stitch--x.dmc-702 .stitch-line{
+  stroke: #4F7942;
+}
+
+.stitch--x.dmc-703 .stitch-line{
+  stroke: #79904C;
+}
+
+.stitch--x.dmc-704 .stitch-line{
+  stroke: #A5A467;
+}
+
+.stitch--x.dmc-712 .stitch-line{
+  stroke: #F5F0DB;
+}
+
+.stitch--x.dmc-718 .stitch-line{
+  stroke: #DB3779;
+}
+
+.stitch--x.dmc-720 .stitch-line{
+  stroke: #C8242B;
+}
+
+.stitch--x.dmc-721 .stitch-line{
+  stroke: #FF7361;
+}
+
+.stitch--x.dmc-722 .stitch-line{
+  stroke: #FF926D;
+}
+
+.stitch--x.dmc-725 .stitch-line{
+  stroke: #FFC87C;
+}
+
+.stitch--x.dmc-726 .stitch-line{
+  stroke: #FFE080;
+}
+
+.stitch--x.dmc-727 .stitch-line{
+  stroke: #FFEBA8;
+}
+
+.stitch--x.dmc-729 .stitch-line{
+  stroke: #F3B080;
+}
+
+.stitch--x.dmc-730 .stitch-line{
+  stroke: #846600;
+}
+
+.stitch--x.dmc-731 .stitch-line{
+  stroke: #8C6700;
+}
+
+.stitch--x.dmc-732 .stitch-line{
+  stroke: #916800;
+}
+
+.stitch--x.dmc-733 .stitch-line{
+  stroke: #CE9B61;
+}
+
+.stitch--x.dmc-734 .stitch-line{
+  stroke: #DDA66B;
+}
+
+.stitch--x.dmc-738 .stitch-line{
+  stroke: #F4C38B;
+}
+
+.stitch--x.dmc-739 .stitch-line{
+  stroke: #F4E9CA;
+}
+
+.stitch--x.dmc-740 .stitch-line{
+  stroke: #FF8313;
+}
+
+.stitch--x.dmc-741 .stitch-line{
+  stroke: #FF8E04;
+}
+
+.stitch--x.dmc-742 .stitch-line{
+  stroke: #FFB755;
+}
+
+.stitch--x.dmc-743 .stitch-line{
+  stroke: #FFE692;
+}
+
+.stitch--x.dmc-744 .stitch-line{
+  stroke: #FFEFAA;
+}
+
+.stitch--x.dmc-745 .stitch-line{
+  stroke: #FFF0C5;
+}
+
+.stitch--x.dmc-746 .stitch-line{
+  stroke: #F6EADB;
+}
+
+.stitch--x.dmc-747 .stitch-line{
+  stroke: #F0F7EF;
+}
+
+.stitch--x.dmc-754 .stitch-line{
+  stroke: #FBE3D1;
+}
+
+.stitch--x.dmc-758 .stitch-line{
+  stroke: #FFB193;
+}
+
+.stitch--x.dmc-760 .stitch-line{
+  stroke: #F9A092;
+}
+
+.stitch--x.dmc-761 .stitch-line{
+  stroke: #FFC9BC;
+}
+
+.stitch--x.dmc-762 .stitch-line{
+  stroke: #E8E8E5;
+}
+
+.stitch--x.dmc-772 .stitch-line{
+  stroke: #E7F9CB;
+}
+
+.stitch--x.dmc-775 .stitch-line{
+  stroke: #F7F6F8;
+}
+
+.stitch--x.dmc-776 .stitch-line{
+  stroke: #FFB1AE;
+}
+
+.stitch--x.dmc-778 .stitch-line{
+  stroke: #FFC7B8;
+}
+
+.stitch--x.dmc-780 .stitch-line{
+  stroke: #B5622E;
+}
+
+.stitch--x.dmc-781 .stitch-line{
+  stroke: #B56B38;
+}
+
+.stitch--x.dmc-782 .stitch-line{
+  stroke: #CC7742;
+}
+
+.stitch--x.dmc-783 .stitch-line{
+  stroke: #E19255;
+}
+
+.stitch--x.dmc-791 .stitch-line{
+  stroke: #47375D;
+}
+
+.stitch--x.dmc-792 .stitch-line{
+  stroke: #616180;
+}
+
+.stitch--x.dmc-793 .stitch-line{
+  stroke: #938BA4;
+}
+
+.stitch--x.dmc-794 .stitch-line{
+  stroke: #BBD0DA;
+}
+
+.stitch--x.dmc-796 .stitch-line{
+  stroke: #1E3A5F;
+}
+
+.stitch--x.dmc-797 .stitch-line{
+  stroke: #1E4263;
+}
+
+.stitch--x.dmc-798 .stitch-line{
+  stroke: #67738D;
+}
+
+.stitch--x.dmc-799 .stitch-line{
+  stroke: #849CB6;
+}
+
+.stitch--x.dmc-800 .stitch-line{
+  stroke: #E9EEE9;
+}
+
+.stitch--x.dmc-801 .stitch-line{
+  stroke: #7B4714;
+}
+
+.stitch--x.dmc-806 .stitch-line{
+  stroke: #1E8285;
+}
+
+.stitch--x.dmc-807 .stitch-line{
+  stroke: #80A7A0;
+}
+
+.stitch--x.dmc-809 .stitch-line{
+  stroke: #BEC1CD;
+}
+
+.stitch--x.dmc-813 .stitch-line{
+  stroke: #AFC3CD;
+}
+
+.stitch--x.dmc-814 .stitch-line{
+  stroke: #A20058;
+}
+
+.stitch--x.dmc-815 .stitch-line{
+  stroke: #A6005B;
+}
+
+.stitch--x.dmc-816 .stitch-line{
+  stroke: #B3005B;
+}
+
+.stitch--x.dmc-817 .stitch-line{
+  stroke: #DB1855;
+}
+
+.stitch--x.dmc-818 .stitch-line{
+  stroke: #FFEAEB;
+}
+
+.stitch--x.dmc-819 .stitch-line{
+  stroke: #F8F7DD;
+}
+
+.stitch--x.dmc-820 .stitch-line{
+  stroke: #1E3655;
+}
+
+.stitch--x.dmc-822 .stitch-line{
+  stroke: #F2EADB;
+}
+
+.stitch--x.dmc-823 .stitch-line{
+  stroke: #000049;
+}
+
+.stitch--x.dmc-824 .stitch-line{
+  stroke: #476174;
+}
+
+.stitch--x.dmc-825 .stitch-line{
+  stroke: #556C80;
+}
+
+.stitch--x.dmc-826 .stitch-line{
+  stroke: #738A99;
+}
+
+.stitch--x.dmc-827 .stitch-line{
+  stroke: #D5E7E8;
+}
+
+.stitch--x.dmc-828 .stitch-line{
+  stroke: #EDF7EE;
+}
+
+.stitch--x.dmc-829 .stitch-line{
+  stroke: #825A08;
+}
+
+.stitch--x.dmc-830 .stitch-line{
+  stroke: #885F12;
+}
+
+.stitch--x.dmc-831 .stitch-line{
+  stroke: #906712;
+}
+
+.stitch--x.dmc-832 .stitch-line{
+  stroke: #B27737;
+}
+
+.stitch--x.dmc-833 .stitch-line{
+  stroke: #DBB680;
+}
+
+.stitch--x.dmc-834 .stitch-line{
+  stroke: #F2D18E;
+}
+
+.stitch--x.dmc-838 .stitch-line{
+  stroke: #5E381B;
+}
+
+.stitch--x.dmc-839 .stitch-line{
+  stroke: #6D4227;
+}
+
+.stitch--x.dmc-840 .stitch-line{
+  stroke: #80551E;
+}
+
+.stitch--x.dmc-841 .stitch-line{
+  stroke: #BC866B;
+}
+
+.stitch--x.dmc-842 .stitch-line{
+  stroke: #DBC2A4;
+}
+
+.stitch--x.dmc-844 .stitch-line{
+  stroke: #6B6766;
+}
+
+.stitch--x.dmc-868 .stitch-line{
+  stroke: #995C30;
+}
+
+.stitch--x.dmc-869 .stitch-line{
+  stroke: #995C30;
+}
+
+.stitch--x.dmc-890 .stitch-line{
+  stroke: #4F564C;
+}
+
+.stitch--x.dmc-891 .stitch-line{
+  stroke: #F13154;
+}
+
+.stitch--x.dmc-892 .stitch-line{
+  stroke: #F95A61;
+}
+
+.stitch--x.dmc-893 .stitch-line{
+  stroke: #F3959D;
+}
+
+.stitch--x.dmc-894 .stitch-line{
+  stroke: #FFC2BF;
+}
+
+.stitch--x.dmc-895 .stitch-line{
+  stroke: #595C4E;
+}
+
+.stitch--x.dmc-898 .stitch-line{
+  stroke: #763713;
+}
+
+.stitch--x.dmc-899 .stitch-line{
+  stroke: #E96D73;
+}
+
+.stitch--x.dmc-900 .stitch-line{
+  stroke: #CE2B00;
+}
+
+.stitch--x.dmc-902 .stitch-line{
+  stroke: #8A184D;
+}
+
+.stitch--x.dmc-904 .stitch-line{
+  stroke: #4E5F39;
+}
+
+.stitch--x.dmc-905 .stitch-line{
+  stroke: #627739;
+}
+
+.stitch--x.dmc-906 .stitch-line{
+  stroke: #8FA359;
+}
+
+.stitch--x.dmc-907 .stitch-line{
+  stroke: #B9C866;
+}
+
+.stitch--x.dmc-909 .stitch-line{
+  stroke: #316955;
+}
+
+.stitch--x.dmc-910 .stitch-line{
+  stroke: #30745B;
+}
+
+.stitch--x.dmc-911 .stitch-line{
+  stroke: #318061;
+}
+
+.stitch--x.dmc-912 .stitch-line{
+  stroke: #739E73;
+}
+
+.stitch--x.dmc-913 .stitch-line{
+  stroke: #99BC95;
+}
+
+.stitch--x.dmc-915 .stitch-line{
+  stroke: #AA185B;
+}
+
+.stitch--x.dmc-917 .stitch-line{
+  stroke: #AB165F;
+}
+
+.stitch--x.dmc-918 .stitch-line{
+  stroke: #A8444C;
+}
+
+.stitch--x.dmc-919 .stitch-line{
+  stroke: #B44B52;
+}
+
+.stitch--x.dmc-920 .stitch-line{
+  stroke: #C55E58;
+}
+
+.stitch--x.dmc-921 .stitch-line{
+  stroke: #CE675B;
+}
+
+.stitch--x.dmc-922 .stitch-line{
+  stroke: #ED8673;
+}
+
+.stitch--x.dmc-924 .stitch-line{
+  stroke: #566364;
+}
+
+.stitch--x.dmc-926 .stitch-line{
+  stroke: #607473;
+}
+
+.stitch--x.dmc-927 .stitch-line{
+  stroke: #C8C6C2;
+}
+
+.stitch--x.dmc-928 .stitch-line{
+  stroke: #E1E0D8;
+}
+
+.stitch--x.dmc-930 .stitch-line{
+  stroke: #667A8C;
+}
+
+.stitch--x.dmc-931 .stitch-line{
+  stroke: #7C8791;
+}
+
+.stitch--x.dmc-932 .stitch-line{
+  stroke: #B6BAC2;
+}
+
+.stitch--x.dmc-934 .stitch-line{
+  stroke: #3E3B28;
+}
+
+.stitch--x.dmc-935 .stitch-line{
+  stroke: #433F2F;
+}
+
+.stitch--x.dmc-936 .stitch-line{
+  stroke: #454531;
+}
+
+.stitch--x.dmc-937 .stitch-line{
+  stroke: #495637;
+}
+
+.stitch--x.dmc-938 .stitch-line{
+  stroke: #632710;
+}
+
+.stitch--x.dmc-939 .stitch-line{
+  stroke: #000031;
+}
+
+.stitch--x.dmc-943 .stitch-line{
+  stroke: #00A275;
+}
+
+.stitch--x.dmc-945 .stitch-line{
+  stroke: #FFCEA4;
+}
+
+.stitch--x.dmc-946 .stitch-line{
+  stroke: #F44900;
+}
+
+.stitch--x.dmc-947 .stitch-line{
+  stroke: #FF5B00;
+}
+
+.stitch--x.dmc-948 .stitch-line{
+  stroke: #FFF3E7;
+}
+
+.stitch--x.dmc-950 .stitch-line{
+  stroke: #EFA27F;
+}
+
+.stitch--x.dmc-951 .stitch-line{
+  stroke: #FFE5BC;
+}
+
+.stitch--x.dmc-954 .stitch-line{
+  stroke: #AAD5A4;
+}
+
+.stitch--x.dmc-955 .stitch-line{
+  stroke: #D6E6CC;
+}
+
+.stitch--x.dmc-956 .stitch-line{
+  stroke: #FF6D73;
+}
+
+.stitch--x.dmc-957 .stitch-line{
+  stroke: #FFCCD0;
+}
+
+.stitch--x.dmc-958 .stitch-line{
+  stroke: #00A082;
+}
+
+.stitch--x.dmc-959 .stitch-line{
+  stroke: #ABCEB1;
+}
+
+.stitch--x.dmc-961 .stitch-line{
+  stroke: #F36C7B;
+}
+
+.stitch--x.dmc-962 .stitch-line{
+  stroke: #FD868D;
+}
+
+.stitch--x.dmc-963 .stitch-line{
+  stroke: #FFE9E9;
+}
+
+.stitch--x.dmc-964 .stitch-line{
+  stroke: #D0E0D2;
+}
+
+.stitch--x.dmc-966 .stitch-line{
+  stroke: #CED5B0;
+}
+
+.stitch--x.dmc-970 .stitch-line{
+  stroke: #FF7518;
+}
+
+.stitch--x.dmc-971 .stitch-line{
+  stroke: #FF6A00;
+}
+
+.stitch--x.dmc-972 .stitch-line{
+  stroke: #FF9200;
+}
+
+.stitch--x.dmc-973 .stitch-line{
+  stroke: #FFC243;
+}
+
+.stitch--x.dmc-975 .stitch-line{
+  stroke: #9E4312;
+}
+
+.stitch--x.dmc-976 .stitch-line{
+  stroke: #F68D39;
+}
+
+.stitch--x.dmc-977 .stitch-line{
+  stroke: #FFA449;
+}
+
+.stitch--x.dmc-986 .stitch-line{
+  stroke: #3A5241;
+}
+
+.stitch--x.dmc-987 .stitch-line{
+  stroke: #536149;
+}
+
+.stitch--x.dmc-988 .stitch-line{
+  stroke: #86916E;
+}
+
+.stitch--x.dmc-989 .stitch-line{
+  stroke: #86996E;
+}
+
+.stitch--x.dmc-991 .stitch-line{
+  stroke: #2F5B49;
+}
+
+.stitch--x.dmc-992 .stitch-line{
+  stroke: #92B7A5;
+}
+
+.stitch--x.dmc-993 .stitch-line{
+  stroke: #C0E0C8;
+}
+
+.stitch--x.dmc-995 .stitch-line{
+  stroke: #007B86;
+}
+
+.stitch--x.dmc-996 .stitch-line{
+  stroke: #AADEE1;
+}
+
+.stitch--x.dmc-3011 .stitch-line{
+  stroke: #7B5B40;
+}
+
+.stitch--x.dmc-3012 .stitch-line{
+  stroke: #AA8667;
+}
+
+.stitch--x.dmc-3013 .stitch-line{
+  stroke: #D0C3A4;
+}
+
+.stitch--x.dmc-3021 .stitch-line{
+  stroke: #735B5D;
+}
+
+.stitch--x.dmc-3022 .stitch-line{
+  stroke: #ACACAA;
+}
+
+.stitch--x.dmc-3023 .stitch-line{
+  stroke: #C6BEAD;
+}
+
+.stitch--x.dmc-3024 .stitch-line{
+  stroke: #D2D0CD;
+}
+
+.stitch--x.dmc-3031 .stitch-line{
+  stroke: #543817;
+}
+
+.stitch--x.dmc-3032 .stitch-line{
+  stroke: #BC9C78;
+}
+
+.stitch--x.dmc-3033 .stitch-line{
+  stroke: #EFDBBE;
+}
+
+.stitch--x.dmc-3041 .stitch-line{
+  stroke: #BE9BA7;
+}
+
+.stitch--x.dmc-3042 .stitch-line{
+  stroke: #E1CDC8;
+}
+
+.stitch--x.dmc-3045 .stitch-line{
+  stroke: #D89769;
+}
+
+.stitch--x.dmc-3046 .stitch-line{
+  stroke: #E5C18B;
+}
+
+.stitch--x.dmc-3047 .stitch-line{
+  stroke: #FFECD3;
+}
+
+.stitch--x.dmc-3051 .stitch-line{
+  stroke: #554900;
+}
+
+.stitch--x.dmc-3052 .stitch-line{
+  stroke: #898D72;
+}
+
+.stitch--x.dmc-3053 .stitch-line{
+  stroke: #BBB394;
+}
+
+.stitch--x.dmc-3064 .stitch-line{
+  stroke: #C2654C;
+}
+
+.stitch--x.dmc-3072 .stitch-line{
+  stroke: #223E9E9DF;
+}
+
+.stitch--x.dmc-3078 .stitch-line{
+  stroke: #FFFFDC;
+}
+
+.stitch--x.dmc-3325 .stitch-line{
+  stroke: #CAE2E5;
+}
+
+.stitch--x.dmc-3326 .stitch-line{
+  stroke: #FF9D96;
+}
+
+.stitch--x.dmc-3328 .stitch-line{
+  stroke: #BC4055;
+}
+
+.stitch--x.dmc-3340 .stitch-line{
+  stroke: #FF7B67;
+}
+
+.stitch--x.dmc-3341 .stitch-line{
+  stroke: #EBACA2;
+}
+
+.stitch--x.dmc-3345 .stitch-line{
+  stroke: #616452;
+}
+
+.stitch--x.dmc-3346 .stitch-line{
+  stroke: #78866B;
+}
+
+.stitch--x.dmc-3347 .stitch-line{
+  stroke: #809873;
+}
+
+.stitch--x.dmc-3348 .stitch-line{
+  stroke: #E1F9BE;
+}
+
+.stitch--x.dmc-3350 .stitch-line{
+  stroke: #C94F5B;
+}
+
+.stitch--x.dmc-3354 .stitch-line{
+  stroke: #FFD6D1;
+}
+
+.stitch--x.dmc-3362 .stitch-line{
+  stroke: #605F54;
+}
+
+.stitch--x.dmc-3363 .stitch-line{
+  stroke: #747F60;
+}
+
+.stitch--x.dmc-3364 .stitch-line{
+  stroke: #A1A787;
+}
+
+.stitch--x.dmc-3371 .stitch-line{
+  stroke: #532510;
+}
+
+.stitch--x.dmc-3607 .stitch-line{
+  stroke: #E74F86;
+}
+
+.stitch--x.dmc-3608 .stitch-line{
+  stroke: #F798B6;
+}
+
+.stitch--x.dmc-3609 .stitch-line{
+  stroke: #FFD6E5;
+}
+
+.stitch--x.dmc-3685 .stitch-line{
+  stroke: #A1354F;
+}
+
+.stitch--x.dmc-3687 .stitch-line{
+  stroke: #CB4E61;
+}
+
+.stitch--x.dmc-3688 .stitch-line{
+  stroke: #FA9790;
+}
+
+.stitch--x.dmc-3689 .stitch-line{
+  stroke: #FFD5D8;
+}
+
+.stitch--x.dmc-3705 .stitch-line{
+  stroke: #FF555B;
+}
+
+.stitch--x.dmc-3706 .stitch-line{
+  stroke: #FF806D;
+}
+
+.stitch--x.dmc-3708 .stitch-line{
+  stroke: #FED4DB;
+}
+
+.stitch--x.dmc-3712 .stitch-line{
+  stroke: #E6656B;
+}
+
+.stitch--x.dmc-3713 .stitch-line{
+  stroke: #FDE5D9;
+}
+
+.stitch--x.dmc-3716 .stitch-line{
+  stroke: #FFD3D4;
+}
+
+.stitch--x.dmc-3721 .stitch-line{
+  stroke: #B84B4D;
+}
+
+.stitch--x.dmc-3722 .stitch-line{
+  stroke: #B85958;
+}
+
+.stitch--x.dmc-3726 .stitch-line{
+  stroke: #C3767B;
+}
+
+.stitch--x.dmc-3727 .stitch-line{
+  stroke: #FFC7C4;
+}
+
+.stitch--x.dmc-3731 .stitch-line{
+  stroke: #D15D67;
+}
+
+.stitch--x.dmc-3733 .stitch-line{
+  stroke: #FF9A94;
+}
+
+.stitch--x.dmc-3740 .stitch-line{
+  stroke: #9C7D85;
+}
+
+.stitch--x.dmc-3743 .stitch-line{
+  stroke: #EBEBE7;
+}
+
+.stitch--x.dmc-3746 .stitch-line{
+  stroke: #9566A2;
+}
+
+.stitch--x.dmc-3747 .stitch-line{
+  stroke: #E6ECE8;
+}
+
+.stitch--x.dmc-3750 .stitch-line{
+  stroke: #0C5B6C;
+}
+
+.stitch--x.dmc-3752 .stitch-line{
+  stroke: #C2D1CE;
+}
+
+.stitch--x.dmc-3753 .stitch-line{
+  stroke: #EDF7F7;
+}
+
+.stitch--x.dmc-3755 .stitch-line{
+  stroke: #9EB0CE;
+}
+
+.stitch--x.dmc-3756 .stitch-line{
+  stroke: #F8F8FC;
+}
+
+.stitch--x.dmc-3760 .stitch-line{
+  stroke: #668E98;
+}
+
+.stitch--x.dmc-3761 .stitch-line{
+  stroke: #E3EAE6;
+}
+
+.stitch--x.dmc-3765 .stitch-line{
+  stroke: #188086;
+}
+
+.stitch--x.dmc-3766 .stitch-line{
+  stroke: #18656F;
+}
+
+.stitch--x.dmc-3768 .stitch-line{
+  stroke: #5C6E6C;
+}
+
+.stitch--x.dmc-3770 .stitch-line{
+  stroke: #FFFAE0;
+}
+
+.stitch--x.dmc-3772 .stitch-line{
+  stroke: #AD533E;
+}
+
+.stitch--x.dmc-3773 .stitch-line{
+  stroke: #E78667;
+}
+
+.stitch--x.dmc-3774 .stitch-line{
+  stroke: #FFDCC1;
+}
+
+.stitch--x.dmc-3776 .stitch-line{
+  stroke: #DD6D5B;
+}
+
+.stitch--x.dmc-3777 .stitch-line{
+  stroke: #BF4024;
+}
+
+.stitch--x.dmc-3778 .stitch-line{
+  stroke: #ED7A64;
+}
+
+.stitch--x.dmc-3779 .stitch-line{
+  stroke: #FFB198;
+}
+
+.stitch--x.dmc-3781 .stitch-line{
+  stroke: #71472A;
+}
+
+.stitch--x.dmc-3782 .stitch-line{
+  stroke: #CEAF90;
+}
+
+.stitch--x.dmc-3787 .stitch-line{
+  stroke: #8B6D73;
+}
+
+.stitch--x.dmc-3790 .stitch-line{
+  stroke: #8C756D;
+}
+
+.stitch--x.dmc-3799 .stitch-line{
+  stroke: #514C53;
+}

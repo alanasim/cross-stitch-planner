@@ -21,3 +21,11 @@ export const makeGetXStitch = () => {
       return spaces.getIn([rowIdx, colIdx, 'xStitch'])
   })
 }
+
+export const makeGetSpaceColor = () => {
+  return createSelector(
+    [getSpaces, getRowIdx, getColIdx],
+    (spaces, rowIdx, colIdx) => {
+      return spaces.getIn([rowIdx, colIdx, 'color'])
+  })
+}

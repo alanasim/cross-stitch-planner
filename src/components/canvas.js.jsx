@@ -18,10 +18,10 @@ class Canvas extends React.Component {
     const pixelHeight = height * 50
 
     const scaleX = d3.scaleLinear()
-      .range([0, 1200])
+      .range([0, 600])
       .domain([0, width])
     const scaleY = d3.scaleLinear()
-      .range([0, 800])
+      .range([0, 400])
       .domain([0, height])
     const scale = {
       x: scaleX,
@@ -30,8 +30,8 @@ class Canvas extends React.Component {
 
     return(
       <div>
-        <div style={{width: 1300, height: 900, border: '1px dotted orange'}}>
-          <svg width="1200" height="800" viewbox="0 0 1200 800">
+        <div style={{width: 700, height: 500, border: '1px dotted orange'}}>
+          <svg width="600" height="400" viewbox="0 0 600 400">
             <DotGrid scale={scale} width={width} height={height} threadCount={threadCount} />
             <Spaces scale={scale} width={width} height={height} threadCount={threadCount} />
           </svg>

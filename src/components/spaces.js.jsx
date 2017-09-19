@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as d3 from 'd3'
 import { toJS } from 'immutable'
-import { makeGetXStitch } from '../selectors/space_selectors.js'
+import { makeGetXStitch, makeGetSpaceColor } from '../selectors/space_selectors.js'
 import { toggleStitch } from '../actions/space_actions.js'
 
 class Space extends React.Component {
@@ -60,7 +60,7 @@ class Space extends React.Component {
 
 function SpaceWrapper(props) {
   return (
-    <g className={"space " + (props.stitch ? 'stitch--x' : 'stitch--blank')} >
+    <g className={`space dmc-${props.color} ` + (props.stitch ? 'stitch--x' : 'stitch--blank')} >
       <Space {...props} />
     </g>
     )
@@ -68,9 +68,11 @@ function SpaceWrapper(props) {
 
 const makeMapStateToProps = () => {
   const getSpaceStitch = makeGetXStitch()
+  const getSpaceColor = makeGetSpaceColor()
   const mapStateToProps = (state, props) => {
     return {
-      stitch: getSpaceStitch(state, props)
+      stitch: getSpaceStitch(state, props),
+      color: getSpaceColor(state, props)
     }
   }
   return mapStateToProps

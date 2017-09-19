@@ -3,7 +3,7 @@ import { combineReducers } from 'redux-immutable'
 
 const SPACE = {
   xStitch: false,
-  color: '#000000'
+  color: '310'
 }
 
 const CANVAS_DEFAULT = {
@@ -13,10 +13,14 @@ const CANVAS_DEFAULT = {
     top: 2,
     bottom: 2
   },
-  width: 18,
-  height: 12,
+  width: 6,
+  height: 4,
   threadCount: 7,
   units: 'in'
+}
+
+const TOOLS_DEFAULT = {
+  color: '310'
 }
 
 const SPACES_DEFAULT = () => {
@@ -43,15 +47,24 @@ const canvasReducer = (state = fromJS(CANVAS_DEFAULT), action) => {
   }
 }
 
-const spacesReducer = (state = fromJS(SPACES_DEFAULT()), action) => {
+const toolsReducer = (state = fromJS(TOOLS_DEFAULT), action) => {
   switch (action.type) {
-    case 'TOGGLE_STITCH':
-      return state.mergeIn([action.row, action.col], fromJS({xStitch: !state.getIn([action.row, action.col, 'xStitch'])}))
+    case 'UPDATE_COLOR_TOOL':
+      return state.set('color', action.payload)
     default:
       return state
   }
 }
 
-const combined = combineReducers({canvas: canvasReducer, spaces: spacesReducer})
+const spacesReducer = (state = fromJS(SPACES_DEFAULT()), action) => {
+  switch (action.type) {
+    case 'TOGGLE_STITCH':
+      return state.mergeIn([action.row, action.col], fromJS({xStitch: !state.getIn([action.row, action.col, 'xStitch']), color: action.color}))
+    default:
+      return state
+  }
+}
+
+const combined = combineReducers({canvas: canvasReducer, spaces: spacesReducer, tools: toolsReducer})
 
 export default combined
