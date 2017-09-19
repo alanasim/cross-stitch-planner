@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import * as d3 from 'd3'
+import { toJS } from 'immutable'
 
 import { LineGrid, DotGrid } from './grids.js.jsx'
 import Spaces from './spaces.js.jsx'
@@ -41,11 +42,12 @@ class Canvas extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+  const canvas = state.get('canvas')
   return {
-    margin: state.canvas.margin,
-    threadCount: state.canvas.threadCount,
-    width: state.canvas.width,
-    height: state.canvas.height
+    margin: canvas.get('margin'),
+    threadCount: canvas.get('threadCount'),
+    width: canvas.get('width'),
+    height: canvas.get('height')
   }
 }
 

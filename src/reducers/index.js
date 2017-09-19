@@ -1,4 +1,5 @@
-import { combineReducers } from 'redux'
+import { fromJS, List } from 'immutable'
+import { combineReducers } from 'redux-immutable'
 
 const SPACE = {
   xStitch: false,
@@ -33,7 +34,7 @@ const SPACES_DEFAULT = () => {
   return main
 }
 
-const canvasReducer = (state = CANVAS_DEFAULT, action) => {
+const canvasReducer = (state = fromJS(CANVAS_DEFAULT), action) => {
   switch (action.type) {
     case 'SOME_ACTION':
       return state
@@ -42,15 +43,10 @@ const canvasReducer = (state = CANVAS_DEFAULT, action) => {
   }
 }
 
-const spacesReducer = (state = SPACES_DEFAULT(), action) => {
+const spacesReducer = (state = fromJS(SPACES_DEFAULT()), action) => {
   switch (action.type) {
     case 'TOGGLE_STITCH':
-      const targetSpace = state[action.row][action.col]
-      const newRow = state[action.row].slice()
-      newRow[action.col] = Object.assign({}, targetSpace, {xStitch: !targetSpace.xStitch})
-      const newState = state.slice()
-      newState[action.row] = newRow 
-      return newState
+      return state.mergeIn([action.row, action.col], fromJS({xStitch: !state.getIn([action.row, action.col, 'xStitch'])}))
     default:
       return state
   }

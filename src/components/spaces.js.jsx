@@ -2,7 +2,8 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as d3 from 'd3'
-import { makeGetSpace } from '../selectors/space_selectors.js'
+import { toJS } from 'immutable'
+import { makeGetXStitch } from '../selectors/space_selectors.js'
 import { toggleStitch } from '../actions/space_actions.js'
 
 class Space extends React.Component {
@@ -50,7 +51,6 @@ class Space extends React.Component {
   }
 
   render() {
-    const { data, stitch } = this.props
     return (
       <g ref={(g) => this.gElem = g} onClick={this.toggleStitch} >
       </g>
@@ -67,11 +67,10 @@ function SpaceWrapper(props) {
 }
 
 const makeMapStateToProps = () => {
-  const getSpace = makeGetSpace()
+  const getSpaceStitch = makeGetXStitch()
   const mapStateToProps = (state, props) => {
     return {
-      data: getSpace(state, props),
-      stitch: getSpace(state, props).xStitch
+      stitch: getSpaceStitch(state, props)
     }
   }
   return mapStateToProps
