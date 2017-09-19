@@ -22,3 +22,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.line {
+  stroke-width: 1.0;
+  stroke: blue;
+}
+.line.line--small {
+  stroke-width: 0.5 !important;
+  stroke: lightBlue;
+}
