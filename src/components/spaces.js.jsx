@@ -1,7 +1,21 @@
 import React from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 import * as d3 from 'd3'
+import { makeGetSpace } from '../selectors/space_selectors.js'
+import { toggleStitch } from '../actions/space_actions.js'
 
 class Space extends React.Component {
+  constructor() {
+    super()
+
+    this.toggleStitch = this.toggleStitch.bind(this)
+  }
+
+  shouldComponentUpdate() {
+    return false
+  }
+
   componentDidMount() {
     const {scale, className} = this.props
     const g = d3.select(this.gElem)
@@ -30,20 +44,56 @@ class Space extends React.Component {
         .attr('key', 'stitch-b')
   }
 
+  toggleStitch() {
+    const { rowIdx, colIdx } = this.props
+    this.props.toggleStitch(rowIdx, colIdx)
+  }
+
   render() {
+    const { data, stitch } = this.props
     return (
-      <g ref={(g) => this.gElem = g} className="g-el">
+      <g ref={(g) => this.gElem = g} onClick={this.toggleStitch} >
       </g>
       )
   }
 }
+
+function SpaceWrapper(props) {
+  return (
+    <g className={"space " + (props.stitch ? 'stitch--x' : 'stitch--blank')} >
+      <Space {...props} />
+    </g>
+    )
+}
+
+const makeMapStateToProps = () => {
+  const getSpace = makeGetSpace()
+  const mapStateToProps = (state, props) => {
+    return {
+      data: getSpace(state, props),
+      stitch: getSpace(state, props).xStitch
+    }
+  }
+  return mapStateToProps
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggleStitch: bindActionCreators(toggleStitch, dispatch)
+  }
+}
+
+const SpaceWithData = connect(makeMapStateToProps(), mapDispatchToProps)(SpaceWrapper)
+
+
 
 export default class Spaces extends React.Component {
   renderSpaces() {
     const { scale, width, height, threadCount } = this.props
 
     const increment = scale.x(1/threadCount)
-    const spaceCount = threadCount * width
+    const colCount = threadCount * width
+    const rowCount = threadCount * height
 
     const spaceScale = d3.scaleLinear()
       .range([0, increment])
@@ -51,8 +101,12 @@ export default class Spaces extends React.Component {
 
 
     let spaces = []
-    for (let i = 0; i < spaceCount; i++) {
-      spaces.push(<svg x={increment*i} y={0} width={increment} height={increment} className="space" ><Space scale={spaceScale} /></svg>)
+    for (let rowIdx = 0; rowIdx < rowCount; rowIdx++) {
+      for (let i = 0; i < colCount; i++) {
+        spaces.push(<svg key={'spc' + rowIdx + '-' + i} x={increment*i} y={increment*rowIdx} width={increment} height={increment} >
+            <SpaceWithData scale={spaceScale} rowIdx={rowIdx} colIdx={i} />
+          </svg>)
+      }
     }
     return spaces
   }

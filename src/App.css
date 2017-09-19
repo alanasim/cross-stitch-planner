@@ -42,16 +42,22 @@
 
 .stitch-line {
   stroke-width: 0.5;
-  stroke: pink;
+  stroke: transparent;
 }
 
-.space .stitch-line {
+.space.stitch--blank .stitch-line{
   stroke: transparent;
+}
+
+.space.stitch--x .stitch-line{
+  stroke: black;
+  stroke-width: 1.5;
 }
 
 .space:hover .stitch-line {
   stroke: purple;
 }
+
 /*
 .space {
   display: block;

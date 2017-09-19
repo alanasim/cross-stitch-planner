@@ -42,10 +42,10 @@ class Canvas extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    margin: state.margin,
-    threadCount: state.threadCount,
-    width: state.width,
-    height: state.height
+    margin: state.canvas.margin,
+    threadCount: state.canvas.threadCount,
+    width: state.canvas.width,
+    height: state.canvas.height
   }
 }
 
