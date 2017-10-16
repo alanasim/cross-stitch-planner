@@ -26,6 +26,7 @@ class ToolPicker extends React.Component {
           <b>Current:</b> {selectedTool}
           <div className="btn" onClick={() => {this.handleChoice('add')}}>Add / Remove</div>
           <div className="btn" onClick={() => {this.handleChoice('select')}}>Select</div>
+          <div className="btn" onClick={() => {this.handleChoice('move')}}>Move</div>
         </div>
     )
   }

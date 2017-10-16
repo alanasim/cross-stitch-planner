@@ -5,6 +5,7 @@ import { toJS } from 'immutable'
 
 import { LineGrid, DotGrid } from './grids.js.jsx'
 import Spaces from './spaces.js.jsx'
+import TransformLayer from './transform_layer.js.jsx'
 
 class Canvas extends React.Component {
   constructor() {
@@ -12,7 +13,7 @@ class Canvas extends React.Component {
   }
 
   render() {
-    const { width, height, margin, threadCount } = this.props
+    const { width, height, margin, threadCount, moveMode } = this.props
 
     const pixelWidth = width * 50
     const pixelHeight = height * 50
@@ -30,11 +31,14 @@ class Canvas extends React.Component {
 
     return(
       <div style={{display: 'inline-block'}}>
-        <div style={{width: 700, height: 500, border: '1px dotted orange'}}>
+        <div style={{width: 700, height: 500, border: '1px dotted orange', position: 'relative'}}>
           <svg width="600" height="400" viewbox="0 0 600 400">
             <DotGrid scale={scale} width={width} height={height} threadCount={threadCount} />
             <Spaces scale={scale} width={width} height={height} threadCount={threadCount} />
           </svg>
+          {moveMode &&
+            <TransformLayer scale={scale} width={width} height={height} threadCount={threadCount} />
+          }
         </div>
       </div>
     )
@@ -47,7 +51,8 @@ const mapStateToProps = (state) => {
     margin: canvas.get('margin'),
     threadCount: canvas.get('threadCount'),
     width: canvas.get('width'),
-    height: canvas.get('height')
+    height: canvas.get('height'),
+    moveMode: state.getIn(['tools', 'tool']) == 'move'
   }
 }
 

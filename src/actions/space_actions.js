@@ -36,3 +36,18 @@ export const updateTool = (tool) => {
     payload: tool
   }
 }
+
+export const initializeTransform = (data) => {
+  return {
+    type: 'INITIALIZE_TRANSFORM',
+    payload: data
+  }
+}
+
+export const updateTranslation = (xOffset, yOffset) => {
+  return {
+    type: 'UPDATE_TRANSLATION',
+    xOffset,
+    yOffset
+  }
+}
